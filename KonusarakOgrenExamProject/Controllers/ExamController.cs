@@ -200,36 +200,7 @@ namespace KonusarakOgrenExamProject.Controllers
             var content = posts.Where(x => x.Id.Equals(id)).FirstOrDefault();
 
             return Json(content.Summary.Text);
-
-            //string siteContent = string.Empty;
-
-            //string url = content.Links[0].Uri.AbsoluteUri;
-
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            //request.AutomaticDecompression = DecompressionMethods.GZip;
-
-            //using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-            //using (Stream responseStream = response.GetResponseStream())
-            //using (StreamReader streamReader = new StreamReader(responseStream))
-            //{
-            //    siteContent = streamReader.ReadToEnd();
-            //}
-
-
-            //string htmlText = String.Empty;
-
-            //while (siteContent.Contains("grid--item body body__container article__body grid-layout__content"))
-            //{
-            //    int startIndex = siteContent.IndexOf("grid--item body body__container article__body grid-layout__content", StringComparison.Ordinal);
-            //    int endIndex = siteContent.IndexOf("</div>", startIndex);
-
-            //    string textValue = siteContent.Substring(startIndex, endIndex);
-
-            //    htmlText += textValue;
-
-            //    siteContent.Remove(startIndex, endIndex);
-            //}
-
+           
         }
 
         public IEnumerable<SyndicationItem> GetTextTitles(int count = -1)

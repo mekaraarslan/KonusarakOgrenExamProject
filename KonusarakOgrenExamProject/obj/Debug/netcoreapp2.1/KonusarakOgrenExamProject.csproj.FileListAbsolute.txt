@@ -118,3 +118,33 @@ C:\Users\MK-PC12\Desktop\AYIKLA\EXAM PROJECT\KonusarakOgrenExamProject\Konusarak
 C:\Users\MK-PC12\Desktop\AYIKLA\EXAM PROJECT\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.pdb
 C:\Users\MK-PC12\Desktop\AYIKLA\EXAM PROJECT\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.csproj.CopyComplete
 C:\Users\MK-PC12\Desktop\AYIKLA\EXAM PROJECT\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.csprojAssemblyReference.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.deps.json
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.runtimeconfig.json
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.runtimeconfig.dev.json
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.dll
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.pdb
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.Views.dll
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\bin\Debug\netcoreapp2.1\KonusarakOgrenExamProject.Views.pdb
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.csprojAssemblyReference.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.RazorAssemblyInfo.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.RazorAssemblyInfo.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.AssemblyInfoInputs.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.AssemblyInfo.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.TagHelpers.input.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.TagHelpers.output.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.RazorCoreGenerate.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Exam\Add.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Exam\ErrorPage.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Exam\ExamPage.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Exam\List.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.RazorTargetAssemblyInfo.cache
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.RazorTargetAssemblyInfo.cs
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.Views.pdb
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.dll
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.pdb
+C:\Users\MK-PC12\Source\Repos\mekaraarslan\KonusarakOgrenExamProject\KonusarakOgrenExamProject\obj\Debug\netcoreapp2.1\KonusarakOgrenExamProject.csproj.CopyComplete

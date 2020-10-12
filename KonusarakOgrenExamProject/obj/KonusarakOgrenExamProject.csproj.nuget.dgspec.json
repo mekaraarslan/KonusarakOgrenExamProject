@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MK-PC12\\Source\\Repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj": {}
+    "C:\\Users\\MK-PC12\\source\\repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MK-PC12\\Source\\Repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj": {
+    "C:\\Users\\MK-PC12\\source\\repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MK-PC12\\Source\\Repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj",
+        "projectUniqueName": "C:\\Users\\MK-PC12\\source\\repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj",
         "projectName": "KonusarakOgrenExamProject",
-        "projectPath": "C:\\Users\\MK-PC12\\Source\\Repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj",
+        "projectPath": "C:\\Users\\MK-PC12\\source\\repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject.csproj",
         "packagesPath": "C:\\Users\\MK-PC12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MK-PC12\\Source\\Repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\obj\\",
+        "outputPath": "C:\\Users\\MK-PC12\\source\\repos\\mekaraarslan\\KonusarakOgrenExamProject\\KonusarakOgrenExamProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
