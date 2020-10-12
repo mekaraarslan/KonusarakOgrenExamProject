@@ -1,3 +1,3 @@
-# Konuşarak Öğren Sınav Projesi
+# Giriş Bilgisi
 # Username = test_username
 # Password = test_password
