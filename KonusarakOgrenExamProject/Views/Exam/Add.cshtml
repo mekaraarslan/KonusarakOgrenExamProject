@@ -1,0 +1,135 @@
+﻿@using KonusarakOgrenExamProject.Models.ViewModels
+@model ExamViewModel
+
+@{
+    ViewData["Title"] = "Sınav Ekle";
+}
+
+@section styles{
+    <style>
+        .addExam {
+            margin-top: 5%;
+        }
+
+        .question {
+            border: solid 1px black;
+            padding: 35px
+        }
+
+        #btnCreateExam {
+            margin-bottom: 10vh;
+        }
+    </style>
+}
+
+<div class="addExam">
+  
+
+    @if (ViewBag.ErrorMessage == null)
+    {
+        <form asp-action="Add" asp-controller="Exam" method="post">
+            <div class="form-group">
+                <label for="selectedText">Yazı Seç</label>
+                <select class="form-control" asp-for="Question.Title">
+                    <option value="-1">Yazı Seçiniz</option>
+                    @if (Model.TextViewModels != null)
+                    {
+                        foreach (var textModel in Model.TextViewModels)
+                        {
+                            <option data-id="@(textModel.Id)" value="@(textModel.Title)">@(textModel.Title)</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="txtContent">Yazı</label>
+                <textarea class="form-control" readonly="readonly" asp-for="Question.Content" rows="5"></textarea>
+            </div>
+
+            <hr style="margin:40px 0px" />
+
+            @for (int i = 0; i < 4; i++)
+            {
+                <div class="form-group question">
+                    <div class="form-group">
+                        <h5>Soru @(i + 1)</h5>
+                        <hr />
+                        <input class="form-control" asp-for="Question.ExamQuestions[i].Question" placeholder="Soru @(i+1)">
+                        <input type="hidden" asp-for="Question.ExamQuestions[i].QuestionNumber" value="@(i+1)" />
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Question.ExamQuestions[i].AnswerA" placeholder="A) " class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Question.ExamQuestions[i].AnswerB" placeholder="B) " class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input asp-for="Question.ExamQuestions[i].AnswerC" placeholder="C) " class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input asp-for="Question.ExamQuestions[i].AnswerD" placeholder="D) " class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4 mx-auto">
+                            <select class="form-control" asp-for="Question.ExamQuestions[i].CorrectAnswer">
+                                <option value="-1">Doğru Cevap Seç</option>
+                                <option value="A">Cevap A</option>
+                                <option value="B">Cevap B</option>
+                                <option value="C">Cevap C</option>
+                                <option value="D">Cevap D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <button id="btnCreateExam" type="submit" class="btn btn-success btn-lg btn-block col-5 mx-auto">SINAV OLUŞTUR</button>
+        </form>
+    }
+    else
+    {
+<div class="jumbotron">
+    <h1 class="display-4">Kayıt işlemi yapılamadı!</h1>
+    <p class="lead">@ViewBag.ErrorMessage</p>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <a class="btn btn-primary btn-lg" asp-action="Add" asp-controller="Exam" role="button">Yeniden Dene</a>
+</div>
+    }
+
+
+</div>
+
+@section scripts{
+    <script>
+        $('#Question_Title').change(function () {
+            var selectedValue = $('#Question_Title option:selected').attr('data-id');
+            $('#loader').show();
+            if (selectedValue != '-1') {
+                $.ajax({
+                url: '@Url.Action("GetTextContent", "Exam")',
+                type: 'POST',
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'json',
+                data: { id : selectedValue},
+                    success: function (result) {
+                        $('#loader').hide();
+                        $('#Question_Content').val('');
+                        $('#Question_Content').val(result);
+                },
+                    error: function (hata) {
+                        $('#loader').hide();
+                        alert('Beklenmeyen bir hata! Sayfayı yenileyip tekrar deneyiniz.');
+                }
+                });
+            }
+        });
+    </script>
+}

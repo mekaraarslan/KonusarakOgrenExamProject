@@ -1,0 +1,90 @@
+﻿@using KonusarakOgrenExamProject.Models
+@model List<Exam>
+
+@{
+    ViewData["Title"] = "Sınavlar";
+}
+
+@section styles{
+
+    <style>
+        .examList {
+            margin-top: 5%;
+        }
+    </style>
+}
+
+<div class="examList">
+
+    @if (Model != null)
+    {
+        if (Model.Count > 0)
+        {
+            <table class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Sınav No</th>
+                        <th scope="col">Başlık</th>
+                        <th scope="col">Tarih</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var exam in Model)
+                    {
+                        <tr style="cursor:pointer;">
+                            <th scope="row">@exam.ExamId</th>
+                            <td onclick="window.location.href='@Url.Action("ExamPage","Exam",new { id=exam.ExamId })'">@exam.Title</td>
+                            <td>@exam.CreatedDate</td>
+                            <td onclick="RemoveExam(@(exam.ExamId))">
+                                <a>
+                                    <i style="color:red;" class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="jumbotron">
+                <h1 class="display-4">Kayıtlı sınav bulunmuyor!</h1>
+                <p class="lead">Yeni bir sınav eklemek için aşağıda bulunan "Sınav Ekle" butonuna basınız.</p>
+                <a class="btn btn-primary btn-lg" asp-action="Add" asp-controller="Exam" role="button">Sınav Ekle</a>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="jumbotron">
+            <h1 class="display-4">Kayıtlı sınav bulunmuyor!</h1>
+            <p class="lead">Yeni bir sınav eklemek için aşağıda bulunan "Sınav Ekle" butonuna basınız.</p>
+            <a class="btn btn-primary btn-lg" asp-action="Add" asp-controller="Exam" role="button">Sınav Ekle</a>
+        </div>
+    }
+</div>
+
+@section scripts{
+    <script>
+        function RemoveExam(examId) {
+            Swal.fire({
+                title: '',
+                text: "Sınav kalıcı olarak silinecek. Onaylıyor musunuz?",
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: "Hayır",
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Evet, Sil!'
+            }).then((result) => {
+                if (result.value) {
+                    window.location.href = '/Exam/Remove/' + examId;
+                }
+            })
+        }
+    </script>
+}
+
