@@ -23,7 +23,7 @@
 }
 
 <div class="addExam">
-  
+
 
     @if (ViewBag.ErrorMessage == null)
     {
@@ -96,40 +96,17 @@
     }
     else
     {
-<div class="jumbotron">
-    <h1 class="display-4">Kayıt işlemi yapılamadı!</h1>
-    <p class="lead">@ViewBag.ErrorMessage</p>
-    <div asp-validation-summary="All" class="text-danger"></div>
-    <a class="btn btn-primary btn-lg" asp-action="Add" asp-controller="Exam" role="button">Yeniden Dene</a>
-</div>
+        <div class="jumbotron">
+            <h1 class="display-4">Kayıt işlemi yapılamadı!</h1>
+            <p class="lead">@ViewBag.ErrorMessage</p>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <a class="btn btn-primary btn-lg" asp-action="Add" asp-controller="Exam" role="button">Yeniden Dene</a>
+        </div>
     }
 
 
 </div>
 
 @section scripts{
-    <script>
-        $('#Question_Title').change(function () {
-            var selectedValue = $('#Question_Title option:selected').attr('data-id');
-            $('#loader').show();
-            if (selectedValue != '-1') {
-                $.ajax({
-                url: '@Url.Action("GetTextContent", "Exam")',
-                type: 'POST',
-                contentType: 'application/x-www-form-urlencoded',
-                dataType: 'json',
-                data: { id : selectedValue},
-                    success: function (result) {
-                        $('#loader').hide();
-                        $('#Question_Content').val('');
-                        $('#Question_Content').val(result);
-                },
-                    error: function (hata) {
-                        $('#loader').hide();
-                        alert('Beklenmeyen bir hata! Sayfayı yenileyip tekrar deneyiniz.');
-                }
-                });
-            }
-        });
-    </script>
+    <script src="~/Content/Exam/Js/ExamAdd.js"></script>
 }

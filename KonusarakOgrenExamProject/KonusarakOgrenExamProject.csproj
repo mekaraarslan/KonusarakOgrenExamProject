@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="Content\Bootstrap\Css\" />
     <Folder Include="Content\Bootstrap\Js\" />
+    <Folder Include="Content\Exam\Css\" />
     <Folder Include="Content\Other\Js\" />
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\" />

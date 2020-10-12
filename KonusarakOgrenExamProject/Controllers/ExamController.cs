@@ -225,6 +225,7 @@ namespace KonusarakOgrenExamProject.Controllers
             using (var dbContext = new ApplicationDbContext())
             {
                 dbContext.Database.EnsureCreated();
+
                 Exam exam = dbContext.Exams.Where(x => x.ExamId == id).FirstOrDefault();
                 if (exam != null)
                 {
